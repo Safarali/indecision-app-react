@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import Header from './Header';
 import AddOption from './AddOption';
 import Action from './Action';
@@ -75,20 +75,25 @@ export default class IndecisionApp extends React.Component {
 
     render() {
         return (
-            <div>
+            <Fragment>
                 <Header subTitle="Basic React App"/>
-                <Action
-                    hasOptions={this.state.options.length > 0} handlePick={this.handlePick}
-                />
-                <Options
-                    options = {this.state.options} handleDeleteOptions={this.handleDeleteOptions} handleDeleteOption={this.handleDeleteOption}
-                />
-                <AddOption handleAddOption={this.handleAddOption}/>
+
+                <div className="container">
+                    <Action
+                        hasOptions={this.state.options.length > 0} handlePick={this.handlePick}
+                    />
+                    <div className="cart">
+                        <Options
+                            options = {this.state.options} handleDeleteOptions={this.handleDeleteOptions} handleDeleteOption={this.handleDeleteOption}
+                        />
+                        <AddOption handleAddOption={this.handleAddOption}/>
+                    </div>
+                </div>
                 <OptionModal
                     selectedOption={this.state.selectedOption}
                     handleClearSelectedOption={this.handleClearSelectedOption}
                 />
-            </div>
+            </Fragment>
         );
     }
 }

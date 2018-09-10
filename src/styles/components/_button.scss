@@ -1,0 +1,31 @@
+// Big Button
+.big-button {
+  @include common-btn-style;
+  border-bottom: 0.6rem solid darken($pink, 10%);
+  padding: $m-size 0;
+  width: 100%;
+  font-weight: bold;
+  font-size: $l-size;
+  margin-bottom: $l-size;
+}
+
+.big-button:disabled {
+  opacity: 0.6;
+}
+
+// Small Button
+
+.small-button {
+  @include common-btn-style;
+  border-bottom: 0.2rem solid darken($pink, 10%);
+  font-weight: 500;
+  font-size: $m-size;
+  padding: $s-size;
+}
+
+.small-button--link {
+  background: none;
+  border: none;
+  color: $off-white;
+  padding: 0;
+}

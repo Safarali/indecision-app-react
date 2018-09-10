@@ -1,0 +1,31 @@
+.cart {
+  background-color: $gray-light;
+}
+
+.cart__message {
+  color: $off-white;
+  text-align: center;
+  font-size: $m-size;
+  border-bottom: 1px solid $gray-mid;
+  padding: $l-size;
+  margin: 0;
+}
+.cart-header {
+  background-color: $gray-dark;
+  color: $off-white;
+  padding: $m-size;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.cart-header__title {
+  margin: 0;
+}
+
+
+.options {
+  list-style-position: inside;
+  margin: 0;
+  padding: 0;
+}

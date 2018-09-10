@@ -1,0 +1,16 @@
+.option {
+  display: flex;
+  justify-content: space-between;
+  padding: $m-size;
+  margin: 0;
+  border-bottom: 1px solid $gray-mid;
+
+}
+
+
+.option__text {
+  font-weight: bold;
+  font-size: $m-size;
+  color: $off-white;
+  word-break: break-all;
+}
